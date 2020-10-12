@@ -1,4 +1,18 @@
 import React, {Component} from 'react';
+import PortfolioItem from '../Common/PortfolioItem';
+
+const portfolioItem = [
+    {imageName:"portfolio-1.jpg", title:"JavaScript Calculator", link:"http://jscalcalculator.gustheitguru.com/"},
+    {imageName:"portfolio-2.jpg", title:"React Calculator", link:"http://reactcal.gustheitguru.com/",},
+    {imageName:"portfolio-3.jpg", title:"Exercise tracker", link:"https://fcc-exercis3-trac.glitch.me/",},
+    {imageName:"portfolio-4.jpg", title:"API Header Micro Service", link:"https://longhaired-checker-shad.glitch.me/",},
+    {imageName:"portfolio-5.jpg", title:"Learning AWS is Fun", link:"http://www.learningawsif.fun",},
+    {imageName:"portfolio-6.jpg", title:"Stock Checker Node and HandleBarJS", link:"http://schb.gustheitguru.com",},
+    {imageName:"portfolio-7.jpg", title:"Card 1", link:"http://www.google.com",},
+    {imageName:"portfolio-8.jpg", title:"Card 2", link:"http://www.google.com",},
+    {imageName:"portfolio-9.jpg", title:"Web 3", link:"http://www.google.com",},
+    
+]
 
 class Portfolio extends Component {
     render () {
@@ -9,114 +23,15 @@ class Portfolio extends Component {
 
                 <div className="section-title">
                 <h2>Portfolio</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>Here is a collections of different projects I have worked on. 
+                    Using JavaScript, HandleBarJS, D3, React, NodeJS and images of Home wiring.</p>
                 </div>
-
-                <div className="row" data-aos="fade-up">
-                <div className="col-lg-12 d-flex justify-content-center">
-                    <ul id="portfolio-flters">
-                    <li data-filter="*" className="filter-active">All</li>
-                    <li data-filter=".filter-app">App</li>
-                    <li data-filter=".filter-card">Card</li>
-                    <li data-filter=".filter-web">Web</li>
-                    </ul>
-                </div>
-                </div>
-
                 <div className="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-1.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" className="venobox" title="App 1"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
+                    {portfolioItem.map((portfolioItem, index) =>{
+                        return <PortfolioItem {...portfolioItem} key={index} />
+                    })}
                 </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-2.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" className="venobox" title="Web 3"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" className="venobox" title="App 2"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-4.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" className="venobox" title="Card 2"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-5.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" className="venobox" title="Web 2"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-6.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" className="venobox" title="App 3"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-7.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" className="venobox" title="Card 1"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-8.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" className="venobox" title="Card 3"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div className="portfolio-wrap">
-                    <img src="assets/img/portfolio/portfolio-9.jpg" className="img-fluid" alt="" />
-                    <div className="portfolio-links">
-                        <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" className="venobox" title="Web 3"><i className="bx bx-plus"></i></a>
-                        <a href="portfolio-details.html" title="More Details"><i className="bx bx-link"></i></a>
-                    </div>
-                    </div>
-                </div>
-
-                </div>
-
             </div>
         </section>
         )

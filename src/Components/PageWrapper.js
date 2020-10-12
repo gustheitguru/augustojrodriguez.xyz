@@ -14,9 +14,10 @@ class PageWrapper extends Component {
                         <img src="assets/img/profile-img.jpg" alt="" className="img-fluid rounded-circle"/>
                         <h1 className="text-light"><a href="index.html">Augusto J. Rodriguez</a></h1>
                         <div className="social-links mt-3 text-center">
-                        <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                        <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-                        <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                        <a href="https://www.instagram.com/theyogi.dude/" className="instagram"><i className="bx bxl-instagram"></i></a>
+                        <a href="https://github.com/gustheitguru" className="git-hub"><i className="bx bxl-github"></i></a>
+                        <a href="https://www.linkedin.com/in/augustojrodriguez/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                        
                         </div>
                     </div>
 

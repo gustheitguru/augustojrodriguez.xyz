@@ -1,14 +1,27 @@
 import React, {Component} from 'react';
 
 class Contact extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+        }
+
+    }
+
     render () {
         return (
-            <section id="contact" className="contact">
+            <section id="contact" className="contact section-bg">
                 <div className="container">
         
                     <div className="section-title">
                         <h2>Contact</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>If you want to know more please contact me. I am open to hearing about any type of project or role you might have in mind. </p>
                     </div>
                     <div className="row" data-aos="fade-in">
                         <div className="col-lg-5 d-flex align-items-stretch">
@@ -40,23 +53,58 @@ class Contact extends Component {
                             <div className="form-row">
                                 <div className="form-group col-md-6">
                                 <label htmlFor="name">Your Name</label>
-                                <input type="text" name="name" className="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    className="form-control" 
+                                    id="name" 
+                                    data-rule="minlen:4" 
+                                    data-msg="Please enter at least 4 chars" 
+                                    value={this.state.name}
+                                    onChange={e => this.setState({name: e.target.value})}
+                                />
                                 <div className="validate"></div>
                                 </div>
                                 <div className="form-group col-md-6">
                                 <label htmlFor="name">Your Email</label>
-                                <input type="email" className="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                                <input 
+                                    type="email" 
+                                    className="form-control" 
+                                    name="email" 
+                                    id="email" 
+                                    data-rule="email" 
+                                    data-msg="Please enter a valid email" 
+                                    value={this.state.email}
+                                    onChange={e => this.setState({email: e.target.value})}
+                                />
                                 <div className="validate"></div>
                                 </div>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="name">Subject</label>
-                                <input type="text" className="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <label htmlFor="name">Phone Number</label>
+                                <input 
+                                    type="text" 
+                                    className="form-control" 
+                                    name="Phone" 
+                                    id="Phone" 
+                                    data-rule="minlen:4" 
+                                    data-msg="Please enter Phone Number" 
+                                    value={this.state.phone}
+                                    onChnage={e => this.setState({phone: e.target.value})}
+                                />
                                 <div className="validate"></div>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="name">Message</label>
-                                <textarea className="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                                <textarea 
+                                    className="form-control" 
+                                    name="message" 
+                                    rows="10" 
+                                    data-rule="required" 
+                                    data-msg="Please write something for us"
+                                    value={this.state.message}
+                                    onChange={e => this.setState({message: e.target.value})}
+                                ></textarea>
                                 <div className="validate"></div>
                             </div>
                             <div className="mb-3">

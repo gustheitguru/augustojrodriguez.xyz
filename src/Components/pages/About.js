@@ -35,16 +35,12 @@ class About extends Component {
                                 <div className="col-lg-6">
                                     <ul>
                                     <li><i className="icofont-rounded-right"></i> <strong>Age:</strong> 38</li>
-                                    <li><i className="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor's in Electronic Engineering</li>
+                                    <li><i className="icofont-rounded-right"></i> <strong>Degree:</strong> B.S. Electronic Engineering</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Email:</strong> info@augustojrodriguez.xyz</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                                     </ul>
                                 </div>
                                 </div>
-                                <p>
-                                Over my career I have focused on managing and monitoring systems and infrastructure. Installing, configuring, maintaining and 
-                                testing different operating systems, software application and ensuring high level availability infrastructure for clients.
-                                </p>
                             </div>
                             </div>
 

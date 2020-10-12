@@ -7,7 +7,7 @@ class Hero extends Component {
             <section id="hero" className="d-flex flex-column justify-content-center align-items-center">
                 <div className="hero-container" data-aos="fade-in">
                     <h1>Augusto J. Rodriguez</h1>
-                    <p>I'm <span className="typed" data-typed-items="Engineer, Developer, Freelancer, Home Automator"></span></p>
+                    <p>I'm <span className="typed" data-typed-items="Engineer, Developer, Freelancer, Integrator"></span></p>
                 </div>
             </section>
            </div>  

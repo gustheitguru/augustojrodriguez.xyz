@@ -1,4 +1,22 @@
 import React, {Component} from 'react';
+import ResumeItem from '../Common/ResumeItem';
+
+const resumeItem = [
+    {jobTitle:"IT Director", date:"2020 - Present", location:"Grand Bay Convalescent Home and Rehabilitation, Grand Bay, AL", description:"My main focuses in bring the the IT infrastructor inline with being HIPPA complient. Utilising a wide range of tools for day to day end user support to disater recover."},
+    {jobTitle:"Fitness Instructor", date:"2018 - 2020", location:"YMCA, Mobile, AL", description:"Developed focused classes for students ranging in Yago, Hiit and tabbata."},
+    {jobTitle:"Intagrator", date:"2018 - 2018", location:"TSI Alarms and Audio, Mobile, AL", description:"Deployed and miantained access control systems and alarm systems."},
+    {jobTitle:"Stay at Home Dad", date:"2017 - 2018", location:"Wiakaloa, HI", description:"Focused on being bring raising my son and house management."},
+    {jobTitle:"Instructor", date:"", location:"Big Island Play Space, Wiakaloa, HI", description:"Designed class for different age groups from early development and pay time to development driven classes for pre-teens and teenages. Using platforms like Aurdino and RaspberrPI with Scratch."},
+    {jobTitle:"Intagrator", date:"", location:"Logic Living, Wiakaloa, HI", description:"As a project lead I worked on pre-wiring and retro fit wiring and programing of smart homes. with systems like Savanat, Lutron, Vantage, Crestron and Control4."},
+    {jobTitle:"System Engineer", date:"", location:"Teksolu, Denver, CO", description:"Worked as the primary point of conntact for Multiple clients supported by this MSP. Focusing mainly on microsoft servers and cisco networking equipment."},
+    {jobTitle:"System Administrator", date:"", location:"Colorado School of Healing Arts, Denver, CO", description:"Worked as a fileMaker Developer and Windows Adminstrator. Supporting in house staff and technologies."},
+    {jobTitle:"IT Recruiter", date:"", location:"Vincent Benjimen, Denver, CO", description:"Worked as a IT recruiter, staffing a wider range of different IT deciplenes. "},
+    {jobTitle:"Network/System/IT Adminstrator (Contractor)", date:"", location:"Robert Half Technology, Denver, CO", description:"Worked on small project foucesed on User Support, O365 and SharePoint."},
+    {jobTitle:"System Adminstrator", date:"", location:"Mobile Accord, Denver, CO", description:"Worked on mutiple plateforms from Azure Cloud to bearmetal local VMware. Utiliesing both Windows and Linux platforms. Supported O365 and various virtual data centers."},
+    {jobTitle:"SharePoint Adminstrator", date:"", location:"Rooney Engineering, Denver, CO", description:"Supported stack holders and engineers with a local SharePoint envierment. Focused on developing and maintaining both department and project sites."},
+    {jobTitle:"SharePoint Business Analyst", date:"", location:"Newmont Mining Corp, Denver, CO", description:"Worked on a Global project deploying SharePoint to multiple office around the world. As part of a large team worked closely with stack holders to develope and deploy a coheriant and fucntional sharepoint enviroment for day-to-day business opperations."},
+    {jobTitle:"System Adminstrator", date:"", location:"Zed, Denver, CO", description:"Focused on maintaning end-user desktop systems, Tape backup, development enviroments, maintaing desktop images and giving white glove treatment to executive level staff."},
+];
 
 class Resume extends Component {
     render () {
@@ -9,218 +27,42 @@ class Resume extends Component {
 
                         <div className="section-title">
                         <h2>Resume</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>Below brief presentation of my work experience. It ranges in many different assets of IT from supporting end-users and executives, deploying physical hadware, and supporting different cloud platforms.</p>
                         </div>
 
                         <div className="row">
                         <div className="col-lg-6" data-aos="fade-up">
                             <h3 className="resume-title">Sumary</h3>
                             <div className="resume-item pb-0">
-                            <h4>Augusto J. Rodriguez</h4>
-                            <p><em>Innovative and deadline-driven Engineer with over 15+ years of experience designing and developing user-centered IT infrastructor and systems</em></p>
-                            <ul>
-                                <li>Saraland, AL</li>
-                                <li>info@augustojrodriguez.xyz</li>
-                            </ul>
+                                <h4>Augusto J. Rodriguez</h4>
+                                <p><em>Innovative and deadline-driven Engineer with over 15+ years of experience designing and developing user-centered IT infrastructor and systems</em></p>
+                                <ul>
+                                    <li>Saraland, AL</li>
+                                    <li>info@augustojrodriguez.xyz</li>
+                                </ul>
                             </div>
-
                             <h3 className="resume-title">Education</h3>
                             <div className="resume-item">
-                            <h4>Bachelor of Science - Electronic Engineering</h4>
-                            <h5>2000 - 2005</h5>
-                            <p><em>Johnson &amp; Wales University, Providence, RI</em></p>
-                            <p>Electrical Engineering focus on the study of the physics and mathematics of electricty, electronics, and electromagnetism. It is used to design, develop, produce and work to improve every kind of electrical equipment imaginable.</p>
+                                <h4>Bachelor of Science - Electronic Engineering</h4>
+                                <h5>2000 - 2005</h5>
+                                <p><em>Johnson &amp; Wales University, Providence, RI</em></p>
+                                <ul>
+                                    <li>Electrical Engineering focus on the study of the physics and mathematics of electricty, electronics, and electromagnetism. It is used to design, develop, produce and work to improve every kind of electrical equipment imaginable.</li>
+                                </ul>
+                            </div>
+                            <h3 className="resume-title">Resume Link</h3>
+                            <div className="resume-item">
+                                <h4>Download Full resume at the link below</h4>
+                                <ul>
+                                    <li><em>Resume Link</em></li>
+                                </ul>    
                             </div>
                         </div>
                         <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             <h3 className="resume-title">Professional Experience</h3>
-                            <div className="resume-item">
-                                <h4>IT Director</h4>
-                                <h5>2020 - Present</h5>
-                                <p><em>Grand Bay Convalescent Home and Rehabilitation, Grand Bay, AL</em></p>
-                                <ul>
-                                    <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                                    <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                                    <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                                    <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>Fitness Instructor</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>YMCA, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>Intagrator</h4>
-                                <h5>2018 - 2018</h5>
-                                <p><em>TSI Alarms and Audio, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>Stay at Home Dad</h4>
-                                <h5>2017 - 2018</h5>
-                                <p><em>Wiakaloa, HI</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>Instructor</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Big Island Play Space, Wiakaloa, HI</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>Intagrator</h4>
-                                <h5>201 - 2020</h5>
-                                <p><em>Logic Living, Wiakaloa, HI</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>System Engineer</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Teksolu, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>Colorado School of Healing Arts</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Teksolu, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>IT Recruiter</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Vincent Benjimen, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>Network/System/IT Adminstrator (Contract)</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Robert Half Technology, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>System Adminstrator</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Mobile Accord, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>SharePoint Adminstrator</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Rooney Engineering, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>SharePoint Adminstrator</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Rooney Engineering, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>SharePoint Adminstrator</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Rooney Engineering, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>SharePoint Adminstrator</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Rooney Engineering, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>SharePoint Business Analyst</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Newmont Mining Corp, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
-                            <div className="resume-item">
-                                <h4>System Adminstrator</h4>
-                                <h5>2018 - 2020</h5>
-                                <p><em>Zed, Denver, CO</em></p>
-                                <ul>
-                                    <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                                    <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                                    <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                                    <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-                                </ul>
-                            </div>
+                            {resumeItem.map((resumeItem, index) => {
+                                return <ResumeItem {...resumeItem} key={index} />
+                            })}
                         </div>
                         </div>
 
