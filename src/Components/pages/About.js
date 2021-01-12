@@ -26,7 +26,7 @@ class About extends Component {
                                 <div className="row">
                                 <div className="col-lg-6">
                                     <ul>
-                                    <li><i className="icofont-rounded-right"></i> <strong>Birthday:</strong> 5 Nov 1981</li>
+                                    <li><i className="icofont-rounded-right"></i> <strong>Birthday:</strong> Nov 1981</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Website:</strong> www.augustojrodriguez.xyz</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Phone:</strong> 808-631-2486</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>City:</strong> Saraland, AL</li>
@@ -34,7 +34,7 @@ class About extends Component {
                                 </div>
                                 <div className="col-lg-6">
                                     <ul>
-                                    <li><i className="icofont-rounded-right"></i> <strong>Age:</strong> 38</li>
+                                    <li><i className="icofont-rounded-right"></i> <strong>Age:</strong> 39</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Degree:</strong> B.S. Electronic Engineering</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Email:</strong> info@augustojrodriguez.xyz</li>
                                     <li><i className="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
